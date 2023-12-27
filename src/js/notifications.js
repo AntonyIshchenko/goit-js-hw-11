@@ -1,8 +1,8 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const octagonIconUrl = new URL('./img/octagon.svg', import.meta.url).href;
-const closeIconUrl = new URL('./img/x.svg', import.meta.url).href;
+const octagonIconUrl = new URL('../img/octagon.svg', import.meta.url).href;
+const closeIconUrl = new URL('../img/x.svg', import.meta.url).href;
 
 export function createMessage(textMessage = '') {
   iziToast.show({
