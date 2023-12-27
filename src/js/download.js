@@ -28,7 +28,7 @@ export function downloadImages(searchKey) {
         loadingTextEl.style.display = 'none';
         buttonEl.disabled = false;
       });
-  }, 1500);
+  }, 2500);
 }
 
 function fetchImages(searchText) {
