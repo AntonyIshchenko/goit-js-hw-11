@@ -17,18 +17,18 @@ export function downloadImages(searchKey) {
   buttonEl.disabled = true;
   buttonEl.blur();
 
-  // add this timeout to demostate css-loader
-  setTimeout(() => {
-    fetchImages(searchKey)
-      .then(images => renderImages(images))
-      .catch(error => {
-        console.log(error);
-      })
-      .finally(() => {
-        loadingTextEl.style.display = 'none';
-        buttonEl.disabled = false;
-      });
-  }, 2500);
+  // // add this timeout to demostate css-loader
+  // setTimeout(() => {
+  fetchImages(searchKey)
+    .then(images => renderImages(images))
+    .catch(error => {
+      console.log(error);
+    })
+    .finally(() => {
+      loadingTextEl.style.display = 'none';
+      buttonEl.disabled = false;
+    });
+  // }, 2500);
 }
 
 function fetchImages(searchText) {
